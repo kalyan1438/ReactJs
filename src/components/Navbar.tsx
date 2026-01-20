@@ -1,5 +1,8 @@
-export default function Navbar(){
+type props = {
+    name:string;
+}
+export default function Navbar({name}:props){
     return <>
-    <h1>Navbar</h1>
+    <h1>NavBar: {name}</h1>
     </>
 }
