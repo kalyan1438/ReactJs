@@ -11,7 +11,7 @@ export default function App(){
     }}/>
     <Button onClick={()=>{setS(text)}}>Sumbit</Button>
     <h1 className="text-9xl">{s}</h1>
-   
+   <div></div>
   </>
     
 }
