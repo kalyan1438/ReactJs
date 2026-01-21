@@ -9,6 +9,7 @@ export default function App(){
     <Input id=""placeholder="Enter text" onChange={(e)=>{
        setText(e.target.value);
     }}/>
+    {/* */}
     <Button onClick={()=>{setS(text)}}>Sumbit</Button>
     <h1 className="text-9xl">{s}</h1>
   
