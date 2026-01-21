@@ -1,15 +1,17 @@
-import Navbar from "./components/Navbar";
-import About from "./components/About";
-import Skills from "./components/Skills";
-type  Id = {
-    id1:number;
-    name:string;
-  }
+import { useState } from "react"
+import { Button } from "./components/ui/button"
+import { Input } from "./components/ui/input"; 
 export default function App(){
-  return <div className="flex  justify-around  font-mono bg-pink border-2" style={{height:"100px",}}>
-          <Navbar name={"Kalyan"} />
-          <About/>
-          <Skills/>
-        </div>
+  //const [count,setCount] = useState(0);
+  const [text , setText] = useState('');
+  const [s, setS] = useState('');
+  return <>
+    <Input id=""placeholder="Enter text" onChange={(e)=>{
+       setText(e.target.value);
+    }}/>
+    <Button onClick={()=>{setS(text)}}>Sumbit</Button>
+    <h1 className="text-9xl">{s}</h1>
+   
+  </>
     
 }
