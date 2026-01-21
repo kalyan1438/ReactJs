@@ -1,11 +1,7 @@
-type params = {
-    id:number;
-    name:string;
-}
-const Home = (props:params) =>{
+
+const Home = (props:{name:string}) =>{
     return (
         <>
-        <h1>Id:{props.id}</h1>
         <h2>Name:{props.name}</h2>
         </>
     )

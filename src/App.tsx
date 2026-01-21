@@ -1,5 +1,4 @@
 import Navbar from "./components/Navbar";
-import Home from "./components/Home";
 import About from "./components/About";
 import Skills from "./components/Skills";
 type  Id = {
@@ -7,16 +6,10 @@ type  Id = {
     name:string;
   }
 export default function App(){
-  const id1 : Id = {
-    id1:558,
-    name:"Kalyan"
-  }
-  return <>
-        <div className="flex  justify-around border-2">
-          <Navbar name="Kalyan"/>
-          <Home id={id1.id1} name={id1.name}/>
+  return <div className="flex  justify-around  font-mono bg-pink border-2" style={{height:"100px",}}>
+          <Navbar name={"Kalyan"} />
           <About/>
           <Skills/>
         </div>
-    </>
+    
 }
