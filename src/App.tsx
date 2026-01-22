@@ -1,7 +1,7 @@
-import Toggle from "./components/Toggle";
+import List from "./components/List";
 export default function App(){
       return <>
-      <Toggle/>
+      <List/>
       </>
     
 }
