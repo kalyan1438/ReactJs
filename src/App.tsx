@@ -1,7 +1,7 @@
-import List from "./components/List";
+import FromExample from "./components/FormExample" 
 export default function App(){
       return <>
-      <List/>
+      <FromExample/>
       </>
     
 }
