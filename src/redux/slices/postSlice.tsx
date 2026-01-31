@@ -1,16 +1,47 @@
-import {createSlice} from "@reduxjs/toolkit";
+import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 
-const counterSlice = createSlice({
-    name:"counter",
-    initialState: { value:0 },
-    reducers:{
-        increment:state=>{state.value+=1},
-        decrement:state=>{state.value-=1},
-        incrementByAmount:(state,action)=>{
-            state.value += action.payload;
-        }
+export const fetchPosts = createAsyncThunk(
+  "posts/fetchPosts",
+  async () => {
+    const res = await fetch("https://jsonplaceholder.typicode.com/posts");
+    return res.json();
+  }
+);
 
-    }
-})
-export const {increment,decrement,incrementByAmount} = counterSlice.actions;
-export default counterSlice.reducer;
+type PostsState = {
+  posts: any[];
+  loading: boolean;
+  error: string | null;
+};
+
+const initialState: PostsState = {
+  posts: [],
+  loading: false,
+  error: null,
+};
+
+const postsSlice = createSlice({
+  name: "posts",
+  initialState,
+  reducers: {},
+  extraReducers: (builder) => {
+    builder
+      .addCase(fetchPosts.pending, (state) => {
+        state.loading = true;
+        state.error = null;
+      })
+      .addCase(fetchPosts.fulfilled, (state, action) => {
+        state.loading = false;
+        state.posts = action.payload;
+      })
+      .addCase(fetchPosts.rejected, (state, action) => {
+        state.loading = false;
+        state.error =
+          (action.payload as string) ??
+          action.error.message ??
+          "Unknown error";
+      });
+  },
+});
+
+export default postsSlice.reducer;
