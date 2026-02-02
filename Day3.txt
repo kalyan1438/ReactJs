@@ -1,0 +1,15 @@
+[
+  {
+    "_id": {
+      "$oid": "698066d847fa92483f46e347"
+    },
+    "name": "Park",
+    "location": {
+      "type": "Point",
+      "coordinates": [
+        54.33,
+        55.887
+      ]
+    }
+  }
+]
