@@ -1,0 +1,123 @@
+[{
+  "_id": 1,
+  "customer": "A",
+  "amount": 100,
+  "data": {
+    "$date": "2026-01-01T00:00:00.000Z"
+  },
+  "items": [
+    "pen",
+    "book"
+  ],
+  "category": "stationary",
+  "city": "HYD"
+},
+{
+  "_id": 2,
+  "customer": "B",
+  "amount": 80,
+  "data": {
+    "$date": "2026-01-02T00:00:00.000Z"
+  },
+  "items": [
+    "pencil"
+  ],
+  "category": "stationary",
+  "city": "BNG"
+},
+{
+  "_id": 3,
+  "customer": "C",
+  "amount": 200,
+  "data": {
+    "$date": "2026-03-01T00:00:00.000Z"
+  },
+  "items": [
+    "eraser",
+    "book"
+  ],
+  "category": "stationary",
+  "city": "HYD"
+},
+{
+  "_id": 4,
+  "customer": "D",
+  "amount": 100,
+  "data": {
+    "$date": "2026-01-01T00:00:00.000Z"
+  },
+  "items": [
+    "pen",
+    "book"
+  ],
+  "category": "stationary",
+  "city": "HYD"
+},
+{
+  "_id": 5,
+  "customer": "E",
+  "amount": 120,
+  "data": {
+    "$date": "2026-01-02T00:00:00.000Z"
+  },
+  "items": [
+    "pencil"
+  ],
+  "category": "stationary",
+  "city": "BNG"
+},
+{
+  "_id": 6,
+  "customer": "F",
+  "amount": 150,
+  "data": {
+    "$date": "2026-03-01T00:00:00.000Z"
+  },
+  "items": [
+    "eraser",
+    "book"
+  ],
+  "category": "stationary",
+  "city": "HYD"
+},
+{
+  "_id": 7,
+  "customer": "A",
+  "amount": 100,
+  "data": {
+    "$date": "2026-01-01T00:00:00.000Z"
+  },
+  "items": [
+    "pen",
+    "book"
+  ],
+  "category": "stationary",
+  "city": "HYD"
+},
+{
+  "_id": 8,
+  "customer": "B",
+  "amount": 80,
+  "data": {
+    "$date": "2026-01-02T00:00:00.000Z"
+  },
+  "items": [
+    "pencil"
+  ],
+  "category": "stationary",
+  "city": "BNG"
+},
+{
+  "_id": 9,
+  "customer": "C",
+  "amount": 200,
+  "data": {
+    "$date": "2026-03-01T00:00:00.000Z"
+  },
+  "items": [
+    "eraser",
+    "book"
+  ],
+  "category": "stationary",
+  "city": "HYD"
+}]
